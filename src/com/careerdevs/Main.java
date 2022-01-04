@@ -8,4 +8,9 @@ public class Main {
     String fullName = firstName + ' ' + lastName;
         System.out.println(fullName);
     }
+
+    public static String createFullName(String a, String b) {
+        return a + " " + b;
+
+    }
 }
