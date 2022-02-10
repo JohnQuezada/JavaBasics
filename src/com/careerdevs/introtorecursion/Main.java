@@ -6,7 +6,7 @@ package com.careerdevs.introtorecursion;
 public class Main {
     public static void main(String[] args) {
         //System.out.println(sum(2));
-        System.out.println(countDown(5));
+        countDown(5);
     }
 
     // edabit challenge
@@ -17,9 +17,18 @@ public class Main {
         return n;
     }
 
-    public static int countDown(int n) {
-        for (int i = n; i >= 1 ; i--) {
-            System.out.println(i);
-        } return n;
+    // iterative solution
+//    public static void countDown(int count) {
+//        for (int i = count; i >= 0 ; i--) {
+//            System.out.println(i);
+//        }
+//    }
+
+    // recursive solution
+    private static void countDown(int count) {
+        System.out.println(count);
+        if (count > 0) {
+            countDown(--count);
+        }
     }
 }
